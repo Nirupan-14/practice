@@ -31,15 +31,15 @@ const CssGrid = () => {
 
   return (
      <div>
-     <h3 className='md:text-3xl text-xl pt-7 md:pt-24 pb-9 font-bold'>Launch fast your great products.</h3>
+     <h3 className='md:text-3xl text-xl pt-7 md:pt-24  pb-9 font-bold'>Launch fast your great products.</h3>
     <div className='md:pl-16 md:pr-16 pl-4 pr-4 '>
-    <div className='grid grid-cols-1 md:grid-cols-3 md:gap-8  text-start '>
+    <div className='grid grid-cols-1 md:grid-cols-3 md:gap-8 gap-y-6 text-start '>
       {cards.map((card, index) => (
-        <div key={index} className='pt-6 md:pt-0 shadow-md   hover:-translate-y-1 hover:scale-100 hover:bg-[#F9EFDB] hover:font-bold duration-300'>
+        <div key={index} className=' md:pt-0 shadow-md   hover:-translate-y-1  hover:bg-[#F9EFDB] hover:font-bold duration-300'>
           <div className='bg-cover w-auto h-[300px]' style={{ backgroundImage: `url(${bg})` }}></div>
           <div className='pl-2 pb-2'>
           <div className='pt-5 md:text-xl text-xl font-bold '>{card.title}</div>
-          <div className='md:pb-6 md:pt-6 pb-4'>{card.description}</div>
+          <div className='md:pb-6 md:pt-6 pb-6'>{card.description}</div>
         </div>
         </div>
       ))}

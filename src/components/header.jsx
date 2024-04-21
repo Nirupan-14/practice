@@ -9,7 +9,7 @@ export default class Header extends Component {
         <Link to="/"><div className='text-2xl font-bold transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  hover:text-[#F9EFDB] duration-300'> Logo</div></Link>
           <div>
         <Link to="/contact"> <button 
-              className='text-lg border rounded-md  pl-2 pr-2 pt-1 pb-2 md:pl-4 md:pr-4 md:pt-1 md:pb-1 font-semibold bg-[#F9EFDB] transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  hover:font-bold duration-300 '
+              className='text-lg border rounded-md  pl-2 pr-2 pt-1 pb-1 md:pl-4 md:pr-4 md:pt-1 md:pb-1 font-semibold bg-[#F9EFDB] transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  hover:font-bold duration-300 '
               aria-label='Contact Us'
             >
               Contact Us
