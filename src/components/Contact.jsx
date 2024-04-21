@@ -14,21 +14,21 @@ const Contact = () => {
       message: ''
     }
   });
-  const [showSuccessMessage, setShowSuccessMessage] = useState(false); // Add state variable
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false); 
 
   const onSubmit = (data) => {
     console.log(data);
     reset();
-    setShowSuccessMessage(true); // Show success message
+    setShowSuccessMessage(true); 
   };
 
   useEffect(() => {
-    // Hide the success message after 3 seconds
+    
     const timer = setTimeout(() => {
       setShowSuccessMessage(false);
     }, 3000);
 
-    return () => clearTimeout(timer); // Clear the timeout when component unmounts or rerenders
+    return () => clearTimeout(timer); 
   }, [showSuccessMessage]);
 
   return (
@@ -38,7 +38,7 @@ const Contact = () => {
       <h3 className='md:text-5xl text-3xl pt-10 md:pt-24 pb-4 font-bold '>Get in touch with us </h3>
       <form className='text-start' onSubmit={handleSubmit(onSubmit)}>
         <div className='md:grid md:grid-cols-2 md:gap-4 pt-4 '>
-          {/* First Name */}
+         
           <div>
             <label htmlFor="firstname" className='text-sm text-gray-800 font-semibold'>First Name</label>
             <div className='md:pt-2'>
@@ -68,7 +68,7 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Last Name */}
+         
           <div className='pt-4 md:pt-0'>
             <label htmlFor="lastname" className='text-sm text-gray-800 font-semibold'>Last Name</label>
             <div className='md:pt-2'>
@@ -129,7 +129,7 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Phone Number */}
+        
         <div className='pt-4 md:pt-0'>
           <label htmlFor="phoneNumber" className='text-sm text-gray-800 font-semibold'>Phone Number</label>
           <div className='md:pt-2'>
@@ -160,7 +160,7 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* District */}
+        
         <div className='pt-4'>
           <label htmlFor="district" className='text-sm text-gray-800 font-semibold w-full'>District</label>
           <div className='md:pt-2 md:pb-4'>
@@ -190,7 +190,7 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Message */}
+        
         <div className='pt-4 md:pt-0'>
           <label htmlFor="message" className='text-sm text-gray-800 font-semibold'>Message</label>
           <div className='md:pt-2'>
@@ -214,14 +214,14 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Submit Button */}
+        
         <div className='pt-4'>
           <button type="submit" className='text-center text-white bg-[#638889] w-full h-10 rounded-md  transition ease-in-out delay-150  hover:-translate-y-1 hover:text-blackgit init
  hover:scale-110 hover:bg-[#9DBC98] hover:font-bold duration-300'>Submit</button>
         </div>
       </form>
 
-      {/* Success Message */}
+      
       {showSuccessMessage && (
         <div className="text-green-500 pt-4">
           Form submitted successfully!
