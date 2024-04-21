@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/practice/static/css/main.536b9c5d.css",
+    "main.js": "/practice/static/js/main.bb9b4b81.js",
+    "static/js/453.ad6eb26e.chunk.js": "/practice/static/js/453.ad6eb26e.chunk.js",
+    "static/media/bg.jpg": "/practice/static/media/bg.148f1ba079fc46aa9fb6.jpg",
+    "static/media/card.png": "/practice/static/media/card.a6e9d01fb696311b1a5e.png",
+    "static/media/card (1).png": "/practice/static/media/card (1).0adfe8009494e96cec19.png",
+    "static/media/american-express.png": "/practice/static/media/american-express.c0d9cac5039e03d254b8.png",
+    "static/media/visa.png": "/practice/static/media/visa.b9d988eca53a9e23b883.png",
+    "index.html": "/practice/index.html",
+    "main.536b9c5d.css.map": "/practice/static/css/main.536b9c5d.css.map",
+    "main.bb9b4b81.js.map": "/practice/static/js/main.bb9b4b81.js.map",
+    "453.ad6eb26e.chunk.js.map": "/practice/static/js/453.ad6eb26e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.536b9c5d.css",
+    "static/js/main.bb9b4b81.js"
+  ]
+}
